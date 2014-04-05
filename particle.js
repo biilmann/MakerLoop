@@ -5,10 +5,13 @@ renderer.setClearColor(new THREE.Color(0, 1));
 renderer.setSize( window.innerWidth, window.innerHeight );
 document.getElementById("bg").appendChild( renderer.domElement );
 
-// var geometry = new THREE.CubeGeometry(1,1,1);
-// var material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
-// var cube = new THREE.Mesh( geometry, material );
-// scene.add( cube );
+window.addEventListener('resize', function() {
+  var WIDTH = window.innerWidth,
+      HEIGHT = window.innerHeight;
+  renderer.setSize(WIDTH, HEIGHT);
+  camera.aspect = WIDTH / HEIGHT;
+  camera.updateProjectionMatrix();
+});
 
 camera.position.z = 300;
 
