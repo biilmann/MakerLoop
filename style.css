@@ -13,6 +13,7 @@ body, html {
 .hero {
   height: 100%;
   margin: 0;
+  background: #000;
 }
 .header-bar {
   height: 100px;
