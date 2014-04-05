@@ -1,38 +1,62 @@
 <!doctype html>
 <html>
 <head>
+  <meta charset="utf-8">
   <title>WebGL Tests</title>
-  <style>
-  body, html {
-    margin: 0; padding: 0; width: 100%; height: 100%;
-    font-family: "Helvetica Neue";
-  }
-  canvas { width: 100%; height: 100%; position: absolute; top: 0; left: 0; }
-  h1 {
-    text-align: center;
-    color: #fff;
-    text-shadow: 0 0 2px rgba(0,0,0,0.7);
-    font-size: 84px;
-    font-weight: 100;
-    position: relative;
-    margin: 0 auto 0;
-    width: 7em;
-    font-weight: 100;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    border: 2px solid;
-    padding: 0.2em;
-  }
-  h1 strong {
-    font-weight: 100;
-  }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div id="bg"></div>
-  <h1><strong>Maker</strong>Loop</h1>
+  <div class="hero">
+    <div id="bg"></div>
+    <h1><strong>Maker</strong>Loop</h1>
+  </div>
+  <div class="header-bar">
+    <div class="left">
+      <h2>Making for Makers</h2>
+    </div>
+    <div class="right nav">
+      <ul>
+        <li><a href="#bitballoon">BitBalloon</a></li>
+        <li><a href="#webpop">Webpop</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="description">
+      <h2 id="bitballoon"><a href="https://www.bitballoon.com">BitBalloon</a></h2>
+      <h3>The ultimate static site hosting platform</h3>
+      <p>BitBalloon automates the process of hosting your site in a highly optimized way. No more FTP or build scripts! Publish in one step with drag & drop or from the command line.</p>
+      <p><a href="https://www.bitballoon.com">www.bitballoon.com</a></p>
+    </div>
+    <div class="illustration">
+      <img src="screens/bitballoon.jpg" alt="BitBalloon">
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="description">
+      <h2 id="webpop"><a href="http://www.webpop.com">Webpop</a></h2>
+      <h3>Design & Develop Heroic Websites</h3>
+      <p>
+        Webpop is a fully hosted CMS aimed at web agencies and freelancers who build websites for clients. Full control over HTML &amp; CSS. Easy on-site editing for client users.
+      </p>
+      <p><a href="http://www.webpop.com">www.webpop.com</a></p>
+    </div>
+    <div class="illustration">
+      <img src="screens/webpop.jpg" alt="BitBalloon">
+    </div>
+  </div>
+
+
+  <div class="footer">
+    <div class="left">
+      &copy; 2014 MakerLoop Inc.
+    </div>
+    <div class="right">
+      610 22nd Street, Suite 315 - San Francisco, CA 94107
+    </div>
+  </div>
   <script src="three.js"></script>
   <script src="particle.js"></script>
 </body>
